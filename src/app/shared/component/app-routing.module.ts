@@ -5,13 +5,18 @@ import { StdDashboardComponent } from './std-dashboard/std-dashboard.component';
 import { TodoDashComponent } from './todo-dash/todo-dash.component';
 
 const routes:Routes=[
-  {
-    path:'student',
-    component:StdDashboardComponent
+{
+    path: '',
+    redirectTo: 'todo',
+    pathMatch: 'full'
   },
   {
     path:'todo',
     component:TodoDashComponent
+  },
+   {
+    path:'student',
+    component:StdDashboardComponent
   }
 ]
 
