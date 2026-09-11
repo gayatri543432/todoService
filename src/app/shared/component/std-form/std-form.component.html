@@ -6,27 +6,27 @@
             <h2 class="text-center">{{isInEditMode?'Update Student':'Add Student'}}</h2>
             <div class="form-group">
                 <label for="studentName">Name*</label>
-                <input type="text" ngModel name="studentName" class="form-control">
+                <input type="text" ngModel name="studentName" class="form-control" required>
             </div>
              <div class="form-group">
                 <label for="age">Age*</label>
-                <input type="number" ngModel name="age" class="form-control">
+                <input type="number" ngModel name="age" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="city">City*</label>
-                <input type="text" ngModel name="city" class="form-control">
+                <input type="text" ngModel name="city" class="form-control" required>
             </div>
              <div class="form-group">
                 <label for="course">Course*</label>
-                <input type="text" ngModel name="course" class="form-control">
+                <input type="text" ngModel name="course" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="marks">Marks*</label>
-                <input type="number" ngModel name="marks" class="form-control">
+                <input type="number" ngModel name="marks" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="isActive">Is Active*</label>
-                <select name="isActive" id="isActive" ngModel class="form-control">
+                <select name="isActive" id="isActive" ngModel class="form-control" required>
                     <option [ngValue]="true">Yes</option>  
                     <option [ngValue]="false">No</option>    
                 </select>
